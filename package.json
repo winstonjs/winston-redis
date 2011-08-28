@@ -12,7 +12,7 @@
     "redis": "0.6.x"
   },
   "devDependencies": {
-    "winston": "0.3.x",
+    "winston": "0.4.x",
     "vows": "0.5.x"
   },
   "main": "./lib/winston-redis",
