@@ -9,13 +9,13 @@
   },
   "keywords": ["logging", "sysadmin", "tools", "winston", "redis"],
   "dependencies": {
-    "redis": "0.8.x"
+    "redis": "0.12.x"
   },
   "devDependencies": {
-    "winston": "0.4.x",
-    "vows": "0.5.x"
+    "winston": "0.8.x",
+    "vows": "0.8.x"
   },
   "main": "./lib/winston-redis",
   "scripts": { "test": "vows test/*-test.js --spec" },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": { "node": "0.8.x || 0.11.x" }
 }
