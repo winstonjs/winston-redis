@@ -7,15 +7,26 @@
     "type": "git",
     "url": "http://github.com/indexzero/winston-redis.git"
   },
-  "keywords": ["logging", "sysadmin", "tools", "winston", "redis"],
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "redis"
+  ],
   "dependencies": {
+    "async": "^1.2.1",
     "redis": "0.12.x"
   },
   "devDependencies": {
-    "winston": "0.8.x",
+    "winston": "^1.0.0",
     "vows": "0.8.x"
   },
   "main": "./lib/winston-redis",
-  "scripts": { "test": "vows test/*-test.js --spec" },
-  "engines": { "node": "0.8.x || 0.11.x" }
+  "scripts": {
+    "test": "vows test/*-test.js --spec"
+  },
+  "engines": {
+    "node": ">=0.8.x"
+  }
 }
