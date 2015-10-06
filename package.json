@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "async": "^1.2.1",
+    "lodash": "3.10.x",
     "redis": "0.12.x"
   },
   "devDependencies": {
