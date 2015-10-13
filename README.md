@@ -25,7 +25,8 @@ In addition to these, the Redis transport also accepts the following options.
 
 * __length:__ (Default **200**) Number of log messages to store.
 * __container:__ (Default **winston**) Name of the Redis container you wish your logs to be in.
-* __channel:__ (Default **None**) Name of the Redis channel to stream logs from. 
+* __channel:__ (Default **None**) Name of the Redis channel to stream logs from.
+* __meta:__ (Default **{}**) Custom fields to add to each log.
 
 *Metadata:* Logged as JSON literal in Redis
 
