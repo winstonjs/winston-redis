@@ -16,12 +16,8 @@ var path = require('path'),
 vows.describe('winston/transports/redis').addBatch({
   'An instance of the Redis Transport': transport(Redis, {
     host: 'localhost',
-    port: 6379
-  }),
-  'Another instance of the Redis Transport': transport(Redis, {
-    redis: {
-      host: 'localhost',
-      port: 6379
-    }
+    port: 6379,
+    channel: 'winston-redis-channel-test',
+    container: 'winston-redis-test'
   })
 }).export(module);
