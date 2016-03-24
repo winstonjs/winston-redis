@@ -16,19 +16,21 @@
   ],
   "dependencies": {
     "async": "^1.2.1",
-    "lodash": "3.10.x",
-    "redis": "0.12.x"
+    "lodash": "^4.6.1"
   },
   "devDependencies": {
-    "winston": "^1.0.0",
     "vows": "0.8.x"
+  },
+  "peerDependencies": {
+    "redis": "^2.0.0",
+    "winston": "^1.0.0"
   },
   "main": "./lib/winston-redis",
   "scripts": {
     "test": "vows test/*-test.js --spec"
   },
   "engines": {
-    "node": ">=0.8.x"
+    "node": ">=0.10.x"
   },
   "license": "MIT"
 }
