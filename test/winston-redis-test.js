@@ -1,5 +1,5 @@
 /*
- * couchdb-test.js: Tests for instances of the Couchdb transport
+ * winston-redis-test.js: Tests for instances of the Redis transport
  *
  * (C) 2011 Max Ogden
  * MIT LICENSE
@@ -17,5 +17,11 @@ vows.describe('winston/transports/redis').addBatch({
   'An instance of the Redis Transport': transport(Redis, {
     host: 'localhost',
     port: 6379
+  }),
+  'Another instance of the Redis Transport': transport(Redis, {
+    redis: {
+      host: 'localhost',
+      port: 6379
+    }
   })
 }).export(module);
