@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "redis": "^2.0.0",
-    "winston": "^1.0.0"
+    "winston": "^2.0.0"
   },
   "main": "./lib/winston-redis",
   "scripts": {
