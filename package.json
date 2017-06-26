@@ -16,14 +16,14 @@
   ],
   "dependencies": {
     "async": "^1.2.1",
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "redis": "git@github.com:Spotme/node_redis.git"
   },
   "devDependencies": {
     "vows": "0.8.x"
   },
   "peerDependencies": {
-    "redis": "^2.0.0",
-    "winston": "^2.0.0"
+    "winston": "^1.0.1"
   },
   "main": "./lib/winston-redis",
   "scripts": {
