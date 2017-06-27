@@ -1,7 +1,7 @@
 {
   "name": "winston-redis",
   "description": "A fixed-length Redis transport for winston",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   "dependencies": {
     "async": "^1.2.1",
     "lodash": "^4.6.1",
-    "redis": "git@github.com:Spotme/node_redis.git"
+    "redis": "~0.12.3"
   },
   "devDependencies": {
     "vows": "0.8.x"
