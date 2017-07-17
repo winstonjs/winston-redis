@@ -17,7 +17,8 @@
   "dependencies": {
     "async": "^1.2.1",
     "lodash": "^4.6.1",
-    "redis": "git+ssh://git@github.com/spotme/node_redis"
+    "redis": "git+ssh://git@github.com/spotme/node_redis",
+    "pkginfo": "0.3.x"
   },
   "devDependencies": {
     "vows": "0.8.x"
