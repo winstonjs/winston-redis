@@ -1,7 +1,7 @@
 {
   "name": "winston-redis",
   "description": "A fixed-length Redis transport for winston",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
@@ -16,14 +16,15 @@
   ],
   "dependencies": {
     "async": "^1.2.1",
-    "lodash": "^4.6.1"
+    "lodash": "^4.6.1",
+    "redis": "^0.12.2",
+    "pkginfo": "0.3.x"
   },
   "devDependencies": {
     "vows": "0.8.x"
   },
   "peerDependencies": {
-    "redis": "^2.0.0",
-    "winston": "^2.0.0"
+    "winston": "^1.0.1"
   },
   "main": "./lib/winston-redis",
   "scripts": {
