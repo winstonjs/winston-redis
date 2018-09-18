@@ -6,18 +6,16 @@
  *
  */
 
-var path = require('path'),
-    vows = require('vows'),
-    assert = require('assert'),
-    helpers = require('winston/test/helpers'),
-    transport = require('winston/test/transports/transport'),
-    Redis = require('../lib/winston-redis').Redis;
+const Redis = require('../lib/winston-redis');
+const transport = require('winston-transport');
 
-vows.describe('winston/transports/redis').addBatch({
-  'An instance of the Redis Transport': transport(Redis, {
+const test_suite = require('abstract-winston-transport');
+
+test_suite({ name: "Redis", Transport: Redis, construct: {
     host: 'localhost',
     port: 6379,
     channel: 'winston-redis-channel-test',
-    container: 'winston-redis-test'
-  })
-}).export(module);
+    container: 'winston-redis-test',
+    meta: { key: "value" }
+  }
+});
