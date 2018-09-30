@@ -1,6 +1,14 @@
 sudo: false
 services:
-  - redis-server
+- redis-server
 language: node_js
 node_js:
-  - "0.12"
+- '8'
+deploy:
+  provider: npm
+  email: info@maxjbo.com
+  api_key:
+    secure: EtQYoxdOZ/SyHhc9i/Zh4/EUeZgrtx8OZOGbhNh4EyQ04X5Q5chYvKy5TlEdAGof3p6K83sxfb0zmq+/PwcSTa506Xzu0zioIdlRMNfqq2d+/r/9lolw7ABt1yqhVss9ZYDi96FT5Dz9tPDR/0KcwNJf6Vj9VteCxX/06qiFLAE=
+  on:
+    tags: true
+    repo: winstonjs/winston-redis
