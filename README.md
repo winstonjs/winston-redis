@@ -47,7 +47,7 @@ In addition to these, the Redis transport also accepts the following options.
 ```
 
 ## Run Tests
-All of the winston tests are written in [vows][2], and designed to be run with npm. 
+Winston-redis tests are written in [mocha][2], using [Abstract Winston Transport][3] and designed to be run with npm. 
 
 ```
   npm test
@@ -57,4 +57,5 @@ All of the winston tests are written in [vows][2], and designed to be run with n
 
 [0]: https://github.com/indexzero/winston
 [1]: https://github.com/mranney/node_redis
-[2]: http://vowsjs.org
+[2]: https://mochajs.org
+[3]: https://github.com/winstonjs/abstract-winston-transport
