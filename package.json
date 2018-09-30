@@ -31,7 +31,7 @@
   },
   "main": "./lib/winston-redis",
   "scripts": {
-    "test": "mocha test/*-test.js"
+    "test": "mocha test/*-test.js --exit"
   },
   "engines": {
     "node": ">=8.11.x"
