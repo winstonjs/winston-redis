@@ -5,7 +5,7 @@
   "author": "Charlie Robbins <charlie.robbins@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/indexzero/winston-redis.git"
+    "url": "git@github.com:winstonjs/winston-redis.git"
   },
   "keywords": [
     "logging",
@@ -22,8 +22,7 @@
   "devDependencies": {
     "abstract-winston-transport": "^0.5.1",
     "mocha": "^5.2.0",
-    "redis": "^2.8.0",
-    "vows": "0.8.x"
+    "redis": "^2.8.0"
   },
   "peerDependencies": {
     "redis": "^2.8.0",
@@ -31,7 +30,7 @@
   },
   "main": "./lib/winston-redis",
   "scripts": {
-    "test": "mocha test/*-test.js"
+    "test": "mocha test/*-test.js --exit"
   },
   "engines": {
     "node": ">=8.11.x"

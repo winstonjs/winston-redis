@@ -3,4 +3,12 @@ services:
   - redis-server
 language: node_js
 node_js:
-  - "0.12"
+  - '8'
+deploy:
+  provider: npm
+  email: $NPM_USER
+  api_key:
+    secure: $NPM_SECURE_TOKEN
+  on:
+    tags: true
+    repo: winstonjs/winston-redis
