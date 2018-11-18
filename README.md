@@ -2,17 +2,28 @@
 
 A capped Redis transport for [winston][0].
 
+## Requirements
+
+- NodeJS 8.11.x
+- Winston 3.x
+
 ## Usage
 ``` js
-  var winston = require('winston');
-  
-  //
-  // Requiring `winston-redis` will expose 
-  // `winston.transports.Redis`
-  //
-  require('winston-redis').Redis;
-  
-  winston.add(winston.transports.Redis, options);
+  const winston = require('winston');
+  const redisTransport = require('winston-redis');
+
+  const logger = winston.createLogger({
+    level: 'info',
+    transports: [
+      new redisTransport()
+    ]
+  });
+
+  logger.log({
+    level: "info",
+    message: "redis is awesome",
+    reason: "it's fast" // this will get stored as meta data
+  });
 ```
 
 This transport accepts the options accepted by the [node-redis][1] client:
@@ -55,7 +66,7 @@ Winston-redis tests are written in [mocha][2], using [Abstract Winston Transport
 
 #### Author: [Charlie Robbins](http://github.com/indexzero)
 
-[0]: https://github.com/indexzero/winston
+[0]: https://github.com/winstonjs/winston
 [1]: https://github.com/mranney/node_redis
 [2]: https://mochajs.org
 [3]: https://github.com/winstonjs/abstract-winston-transport
