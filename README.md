@@ -39,6 +39,7 @@ In addition to these, the Redis transport also accepts the following options.
 * __container:__ (Default **winston**) Name of the Redis container you wish your logs to be in.
 * __channel:__ (Default **None**) Name of the Redis channel to stream logs from.
 * __meta:__ (Default **{}**) Custom fields to add to each log.
+* __flatMeta__: (Default **false**) Store meta data at the top level of the object rather than within a child `meta` object.
 
 *Metadata:* Logged as JSON literal in Redis
 
@@ -58,7 +59,7 @@ In addition to these, the Redis transport also accepts the following options.
 ```
 
 ## Run Tests
-Winston-redis tests are written in [mocha][2], using [Abstract Winston Transport][3] and designed to be run with npm. 
+Winston-redis tests are written in [mocha][2], using [Abstract Winston Transport][3] and designed to be run with npm.
 
 ```
   npm test
