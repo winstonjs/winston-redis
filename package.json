@@ -15,7 +15,7 @@
     "redis"
   ],
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "lodash": "^4.6.1",
     "winston-transport": "^4.2.0"
   },
