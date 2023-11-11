@@ -15,7 +15,8 @@
     "redis"
   ],
   "dependencies": {
-    "async": "^2.6.3",
+    "async": "^2.6.4",
+    "get-safe-instance": "^1.0.4",
     "lodash": "^4.17.21",
     "redis": "^3.1.2",
     "winston-transport": "^4.4.1"
